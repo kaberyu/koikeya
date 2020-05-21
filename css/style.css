@@ -277,6 +277,12 @@ main {
   padding-bottom: 20px;
   width: 100%;
   max-width: 570px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.list-photo--img:hover {
+  opacity: 0.8;
 }
 
 .list-theme {
@@ -301,10 +307,19 @@ main {
 .list-btn--img {
   width: 220px;
   position: absolute;
+  z-index: 20;
   left: 0;
   top: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.list-btn--img:hover {
+  opacity: 0.8;
+  -webkit-transform: translate(-50%, -3px);
+          transform: translate(-50%, -3px);
 }
 
 @media (min-width: 768px) {
@@ -332,10 +347,10 @@ main {
     padding: 0 30px 50px;
   }
   .list-btn--img {
-    top: 22px;
+    top: -5px;
   }
   .list-btn .last-btn {
-    top: 0;
+    top: -27px;
   }
 }
 
@@ -429,6 +444,10 @@ main {
 
 .brand-link {
   width: 100%;
+}
+
+.brand-link:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 768px) {

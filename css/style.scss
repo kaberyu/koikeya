@@ -260,6 +260,10 @@ main{
       padding-bottom: 20px;
       width: 100%;
       max-width: 570px;
+      transition: all 0.25s;
+      &:hover{
+        opacity: 0.8;
+      }
     }
   }
   &-theme{
@@ -280,9 +284,15 @@ main{
     &--img{
       width: 220px;
       position: absolute;
+      z-index: 20;
       left: 0;
       top: 0;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
+      transition: all 0.2s;
+      &:hover{
+        opacity: 0.8;
+        transform: translate(-50%, -3px);
+      }
     }
   }
 }
@@ -307,10 +317,10 @@ main{
     }
     &-btn{
       &--img{
-        top: 22px;
+        top: -5px;
       }
       .last-btn{
-        top: 0;
+        top: -27px;
       }
     }
   }
@@ -402,6 +412,9 @@ main{
   }
   &-link{
     width: 100%;
+    &:hover{
+      opacity: 0.8;
+    }
   }
 }
 @media(min-width: 768px){
